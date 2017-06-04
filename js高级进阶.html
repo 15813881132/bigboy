@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+  <meta name="keywords" content="js 高级进阶">
+	<title>js高级进阶的第一天</title>
+
+</head>
+<body>
+	 vim编辑器 ，编辑器之神
+	 emacs编辑器，神之编辑器
+1. js包含：dom(document object model文档对象模型) 提供了一整套操作页面元素的api。
+           bom(browser object model 浏览器对象模型)提供了一整套操作浏览器相关信息的api. {
+           相关元素；
+           location获取url信息的。
+           navigator.userAgent 获取浏览器版本信息的
+           }
+           ECMAScript{js 的一套语法规范，语法标准！常用的是es3  ，没有es4 直接过渡到es5 ,目前到了es6 ,es7也快马上出来了}
+           三大部分
+  api:applacation programming interface 应用程序开发接口
+
+
+  2. js的基本类型：string  number  boolean
+      复合（复杂）类型：Object  funciton Array Date RegExp String Number Boolean Math(除了function,Math,其余大写开关的都是构造函数);
+        例：  var obj = new Object()
+
+  3.  js的空类型：null  undefined
+
+  如何获娶一个数据的数据类型：
+    答：  使用typeof关键字,,,它有一个返回值，可以用console.log进行打印出来。
+          typeof null返回的是object.
+
+           注：变量声明并未赋值时为undefined.
+
+               变量不可能自动为null 除非手动赋值null。
+
+    4. ===和==
+       等于==是判断值是否相等
+       全等===判断类型和值
+
+    5. in关键字的使用：
+        for  in 遍历对象的属性！
+          var obj ={
+             name:"张学友"
+             age:18
+          }
+
+          for(var k in obj){
+              consol.log(k);
+              consol.log(typeof k)
+          }
+
+
+          对象的属性都是字符串类型。
+
+    6. 逻辑中断（短路运算）；
+        ||或中断    表达1||表达2
+        如果表达式1的值为真，则返回表达式1的会是，否则就返回表达式2的值。
+
+        && 与中断 表达1&&表达2
+         如果表达式1为假，则返回表达1的值 否则返回表达式2的值 。
+
+    7。delete关键字的使用；
+
+        删除没有使用var声明的变量（delete 变量名）
+
+        删除属性  delete 对象.属性名
+                  delete 对象[ 属性名]
+
+        delete关键字拥有返回值。布尔类型，表示山竹除是否成功，但是不可靠。-------------------------------
+
+    8. 循环语句：for
+
+                 do-while
+
+                 switch-case  此语句还要加breakt和default属性。
+
+                 if-else
+
+    9.
+
+
+    课外知识：插件tampemonkey
+
+
+</body>
+</html>
